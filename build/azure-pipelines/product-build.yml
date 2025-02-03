@@ -203,6 +203,8 @@ extends:
       - registry: onebranch.azurecr.io
         tenant: AME
         identity: 1ESPipelineIdentity
+    featureFlags:
+      EnableDefenderForLinux: true
     stages:
       - stage: Compile
         jobs:
